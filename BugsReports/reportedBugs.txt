@@ -4,6 +4,8 @@ BUG 1
 * Title: Update existing item's image doesn't work
 Description: Uploading a new image for an existing item is not working as Expected
 * Example video: https://share.zight.com/p9u947lj
+* This issue is reproducible in the following devices: desktop, mobile and tablet
+* Severity: [ Medium ]
 
 * Steps to Reproduce:
 1. As a User go to home page
@@ -16,7 +18,6 @@ Description: Uploading a new image for an existing item is not working as Expect
 - Page reloads, Updated image is displayed
 * Actual Result:
 - Original image remains 
-* Severity: [ Medium ]
 
 ✅ Test Case (should pass if fixed)
 * ID: 01-TC-UpdateItemImage
@@ -41,6 +42,10 @@ BUG 2
 =========================================================
 * Title: User gets Application error when updating a deleted item
 * Description: User is able to edit / update a deleted product
+* Example Video: https://share.zight.com/v1ukG2KK
+* This issue is reproducible in the following devices: desktop, mobile and tablet
+* Severity: [ High ]
+
 Steps to Reproduce:
 1. As a User go to home page
 2. Search an item to edit and press 'Edit' cta
@@ -50,7 +55,6 @@ Steps to Reproduce:
 Upload Cta should be disabled when item is deleted
 * Actual Result:
 User is able to save update for deleted product, application crashes
-Severity: [ High ]
 
 ✅ Test Case (should pass if fixed)
 ID: 02-TC-CheckUpdateCTAisDisabled
@@ -71,6 +75,7 @@ BUG 3
 =========================================================
 * Title: 'Create Item' cta is not disbled when no image is selected
 * Description: 'Create Item' cta is not getting disabled after image selected is removed
+* This issue is reproducible in the following devices: desktop, mobile and tablet
 * Example video: https://share.zight.com/6qunA5rL
 * Severity: [ Medium ]
 
