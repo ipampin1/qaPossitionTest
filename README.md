@@ -59,3 +59,6 @@ If you prefer to run tests locally:
 ---
 
 **No other dependencies are required to run the tests in Docker.**
+
+### Bugs Report: 
+Added a 'BugsReports' folder with a txt file where I reported 3 bugs, how to reproduce and a manual test to cover them
