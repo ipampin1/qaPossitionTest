@@ -8,19 +8,19 @@ You do **not** need to install Node.js or Cypress locally.
 Just make sure you have [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed and running.
 
 ### 1. Clone the repository
-
+In a terminal run:
 ```bash
 git clone https://github.com/ipampin1/qaPossitionTest.git
 cd qaPossitionTest
 ```
 
 ### 2. Run tests for all platforms (desktop, tablet, mobile)
-
+In a terminal run:
 ```bash
 docker-compose up
 ```
 
-This will run the Cypress test suite for all three platforms using the correct viewport for each.
+ This will run the Cypress test suite for all three platforms using the correct viewport for each.
 
 ### 3. Run tests for a specific platform
 
