@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  cypress-desktop:
+    build: .
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
+    command: npm run test:desktop
+
+  cypress-tablet:
+    build: .
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
+    command: npm run test:tablet
+
+  cypress-mobile:
+    build: .
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
+    command: npm run test:mobile

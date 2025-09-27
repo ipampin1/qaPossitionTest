@@ -1,0 +1,101 @@
+=========================================================
+BUG 1
+=========================================================
+* Title: Update existing item's image doesn't work
+Description: Uploading a new image for an existing item is not working as Expected
+* Example video: https://share.zight.com/p9u947lj
+
+* Steps to Reproduce:
+1. As a User go to home page
+2. Search an item to edit and press 'Edit' cta
+3. Press 'Choose File' cta
+4. Select a new valid image to upload and submit
+5. Press 'Update Item' cta
+
+* Expected Result:
+- Page reloads, Updated image is displayed
+* Actual Result:
+- Original image remains 
+* Severity: [ Medium ]
+
+✅ Test Case (should pass if fixed)
+* ID: 01-TC-UpdateItemImage
+* Description: This test case checks the fix for 'BUG 1', where user is not able to update an existing item's image.
+* Example video: https://share.zight.com/geueDWrp
+* Can be automated?: yes
+
+* Preconditions:
+- Needs to have already create items
+Steps:
+1. As a User go to home page
+2. Search an item to edit and press 'Edit' cta
+3. Press 'Choose File' cta
+4. Select a new valid image to upload and submit
+5. Press 'Update Item' cta
+Expected Result:
+- Page reloads, Updated image is displayed
+
+---------------------------------------------------------
+
+BUG 2
+=========================================================
+* Title: User gets Application error when updating a deleted item
+* Description: User is able to edit / update a deleted product
+Steps to Reproduce:
+1. As a User go to home page
+2. Search an item to edit and press 'Edit' cta
+3. For the same item press delete and confirm deletion
+4. Press 'Update Item' cta
+* Expected Result:
+Upload Cta should be disabled when item is deleted
+* Actual Result:
+User is able to save update for deleted product, application crashes
+Severity: [ High ]
+
+✅ Test Case (should pass if fixed)
+ID: 02-TC-CheckUpdateCTAisDisabled
+* Description: This test case checks the fix for 'BUG 2', where user is able to update a deleted item's.
+* Can be automated?: yes
+* Preconditions:
+- Needs to have already create items
+* Steps:
+1. As a User go to home page
+2. Search an item to edit and press 'Edit' cta
+3. For the same item press delete and confirm deletion
+Expected Result:
+* 'Update Item' cta disables after item is deleted
+
+---------------------------------------------------------
+
+BUG 3
+=========================================================
+* Title: 'Create Item' cta is not disbled when no image is selected
+* Description: 'Create Item' cta is not getting disabled after image selected is removed
+* Example video: https://share.zight.com/6qunA5rL
+* Severity: [ Medium ]
+
+* Steps to Reproduce:
+1. As a User go to home page
+2. Press 'Choose File' cta
+3. Select a valid image to upload and submit
+4. Press 'Choose File' cta
+5. Press 'Cancel' cta
+* Expected Result:
+'Create Item' CTA gets disabled as 
+Actual Result:
+'Create Item' CTA reminds enabled 
+
+
+✅ Test Case (should pass if fixed)
+* ID: TC-BUG-03-DisableCreateItemCTA
+* Preconditions: None
+* Can be automated?: yes
+
+* Steps: 
+1. As a User go to home page
+2. Press 'Choose File' cta
+3. Select a valid image to upload and submit
+4. Press 'Choose File' cta
+5. Press 'Cancel' cta
+* Expected Result: 
+'Choose File' cta gets disabled

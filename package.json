@@ -1,0 +1,20 @@
+{
+  "name": "qapossitiontest",
+  "version": "1.0.0",
+  "description":"Ignacio Pampin - QA Position Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open",
+    "test:desktop": "cypress run --env device=desktop",
+    "test:tablet": "cypress run --env device=tablet",
+    "test:mobile": "cypress run --env device=mobile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.3.0"
+  }
+}
+
