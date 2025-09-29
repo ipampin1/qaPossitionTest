@@ -13,7 +13,7 @@ describe(`Create new Item`, () => {
     });
 
     it(`Create a new generic item and check it is shown in items list`, () => {
-        const text = `Testing Creation of new item then it is deleted, device: ${device}`;
-        cy.createDeleteItem(device, text);
+        const text = `Testing Creation of new item then it is deleted`;
+        cy.createDeleteItem(text);
     });
 });
